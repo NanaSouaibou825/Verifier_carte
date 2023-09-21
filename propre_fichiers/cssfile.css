@@ -1,0 +1,240 @@
+
+/* page login et register*/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'poppins', sans-serif;
+ }
+
+ section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   background: url('fondd.JPG') no-repeat;
+   background-size: cover;
+   background-position: center;
+
+     }
+
+
+.nav-bar{
+   background-color: #0d0218;;
+}
+
+.nav-bar h1 {
+   font-size: 4em;
+   color: #dceb0f;
+   text-align: center;
+}
+
+
+.errorMessage{
+   color: #dceb0f;
+   text-align: center;
+   margin-top: 10%;
+}
+
+.login-box{
+   margin-top: -60px;
+   position: relative;
+   width: 400px;
+   height: 550px;
+   background: transparent;
+   border: 5px solid rgb(255, 255, 255);
+   border-radius: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   backdrop-filter: blur(8000px);
+
+}
+
+.register-box{
+   margin-top: 20px;
+   position: relative;
+   width: 410px;
+   height: 610px;
+   background: transparent;
+   border: 5px solid rgb(255, 255, 255);
+   border-radius: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   backdrop-filter: blur(8000px);
+}
+
+h2 {
+   margin-top: -15%;
+   font-size: 3em;
+   color: #fff;
+   text-align: center;
+}
+
+.h2-register{
+   margin-top: 2%;
+   margin-bottom: -5%;
+   font-size: 3em;
+   color: #fff;
+   text-align: center;
+}
+
+.input-box {
+   position: relative;
+   width: 310px;
+   margin: 30px 0;
+   border-bottom: 2px solid #fff;
+}
+
+.input-box label {
+   position: absolute;
+   top: 50%;
+   left: 5px;
+   transform: translateY(-50%);
+   font-size: 1em;
+   color: #fff;
+   pointer-events: none;
+   transition: .5s;
+} 
+
+table {
+   width: auto;
+   position: relative;
+}
+
+.affiche td {
+   width: 250px;
+   margin: 30px;
+}
+
+
+.input-box-register{
+   position: relative;
+   width: 310px;
+   margin: 20px;
+   padding-top: -60%;
+   padding-bottom: -60%;
+   border-bottom: 2px solid #fff;
+}
+
+.input-box-register label {
+   position: absolute;
+   top: 50%;
+   left: 5px;
+   transform: translateY(-25%);
+   font-size: 1em;
+   color: #fff;
+   pointer-events: none;
+   transition: .5s;
+}
+
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+   top: -5px;
+
+}
+
+.input-box-register input:focus~label,
+.input-box-register input:valid~label {
+   top: -3px;
+
+}
+
+.input-box input{
+   width: 100%;
+   height: 50px;
+   background: transparent;
+   border: none;
+   outline: none;
+   font-size: 1em;
+   color: #fff;
+   padding: 0 35px 0 5px;
+}
+
+.input-box-register input{
+   width: 100%;
+   height: 50px;
+   background: transparent;
+   border: none;
+   outline: none;
+   font-size: 1em;
+   color: #fff;
+   padding: 0 35px 0 5px;
+}
+
+.remember-forget{
+   margin: -15px 0 15px;
+   font-size: .9em;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+}
+
+.remember-forget input{
+   cursor: pointer;
+}
+
+.remember-forget label input{
+   margin-right: 3px;
+
+}
+
+.remember-forget a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.remember-forget a:hover{
+   text-decoration: underline;
+}
+
+button{
+   width: 100%;
+   height: 40px;
+   background: #fff;
+   border: none;
+   outline: none;
+   border-radius: 40px;
+   cursor: pointer;
+   font-size: 1em;
+   color: #000;
+   font-weight: 500px;
+}
+
+.register-link{
+   font-size: .9em;
+   color: #fff;
+   text-align: center;
+   margin: 25px 0 10px;
+}
+
+.register-link p a{
+   color: #fff;
+   text-decoration: none;
+   font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 360px) {
+   .login-box{
+      width: 100%;
+      height: 100vh;
+      border: none;
+      border-radius: 0;
+
+   }
+}
+                                 /* page d'affichage des noms*/
+
+.affiche td {
+   position: relative;
+   width: 40%;
+
+}
